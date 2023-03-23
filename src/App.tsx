@@ -231,7 +231,7 @@ function App() {
                 closeButton={true}
                 closeOnClick={true}
                 onClose={() => setCurrentPlaceId(null)}
-                anchor="left"
+                anchor="bottom"
                 className='popup__container'
               >
                 <div className="card" style={{padding: 10, width: "300px"}}>
