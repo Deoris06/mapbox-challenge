@@ -4,9 +4,9 @@ import mapboxgl from 'mapbox-gl';
 import { InfoCircleFill } from 'react-bootstrap-icons';
 import axios from 'axios';
 import { Oval } from 'react-loader-spinner';
-// import { workerClass } from 'mapbox-gl'
-// import workerLoader from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
-// workerClass = workerLoader;
+
+//@ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
 mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 //city and coord data
 const data = [
