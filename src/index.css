@@ -1,13 +1,95 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mt{
+  margin: 2rem;
+  width: 400px;
+}
+input{
+  /* padding: 15px; */
+  width: 100%;
+  outline: none;
+  border: 0;
+}
+.bg-white{
+  background-color: #fff;
+  border-radius: 10px;
+  width: 32%;
+  height: 100vh;
+  padding: 2rem;
+  cursor: pointer;
+  overflow-y: scroll;
+  font-size: 13px;
+  
+}
+.mt-xs{
+  margin-top: 15px;
+}
+.d-flex{
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+.btn__search{
+  border: 0;
+  background-color: slateblue;
+  border-radius: 10px;
+  color: #fff;
+  padding: 9px 9px;
+  font:inherit;
+  font-size: 13px;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather__label{
+  font-size: 12px;
+}
+
+.weather__place{
+  font-size: 14px;
+}
+.weather__heading{
+  font-size: 13px;
+  text-align: center;
+}
+.weather__day{
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+.weather__temp{
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+.weather__image{
+  text-align: center;
+}
+.weather__desc{
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* overriding styles */
+.mapboxgl-popup-content {
+  border-radius: 13px !important;
+}
+.mapboxgl-popup-close-button {
+  font-size: 25px !important;
+  margin-right: 15px !important;
 }
