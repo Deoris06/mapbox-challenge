@@ -93,3 +93,13 @@ input{
   font-size: 25px !important;
   margin-right: 15px !important;
 }
+
+@media screen and (max-width: 550px) {
+  .bg-white{
+    width: 32%;
+    height: 10vh;
+  }
+  .d-flex{ 
+    width: 300px;
+  }
+}
