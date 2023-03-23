@@ -1,12 +1,12 @@
 import React, { useRef, useEffect, useState } from 'react';
 import ReactMapGL, { Marker, Popup, FullscreenControl, Layer } from "react-map-gl";
-import mapboxgl from 'mapbox-gl'; 
 import { InfoCircleFill } from 'react-bootstrap-icons';
 import axios from 'axios';
 import { Oval } from 'react-loader-spinner';
-
 //@ts-ignore
-// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
+import mapboxgl from '!mapbox-gl'; 
+//@ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
 mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 //city and coord data
 const data = [
