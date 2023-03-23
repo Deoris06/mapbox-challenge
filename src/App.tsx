@@ -4,6 +4,7 @@ import { InfoCircleFill } from 'react-bootstrap-icons';
 import axios from 'axios';
 import { Oval } from 'react-loader-spinner';
 //@ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
 import mapboxgl from '!mapbox-gl'; 
 //@ts-ignore
 // eslint-disable-next-line import/no-webpack-loader-syntax
