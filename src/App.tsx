@@ -4,7 +4,10 @@ import mapboxgl from 'mapbox-gl';
 import { InfoCircleFill } from 'react-bootstrap-icons';
 import axios from 'axios';
 import { Oval } from 'react-loader-spinner';
-
+// import { workerClass } from 'mapbox-gl'
+// import workerLoader from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
+// workerClass = workerLoader;
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 //city and coord data
 const data = [
   {
@@ -181,8 +184,8 @@ function App() {
         <ReactMapGL
         {...viewport}
         mapboxApiAccessToken="pk.eyJ1IjoiZGVvcm9zMDYiLCJhIjoiY2xmaWU4dThuMDhkdDNvcG5xNTAzc2c1MiJ9.jVQ7dXhkq1hjIsUf6qPjBw"
-        width="100%"
-        height="100%"
+        width="100"
+        height="100"
         transitionDuration={200}
         mapStyle="mapbox://styles/mapbox/streets-v12"
         onViewportChange={(viewport: any) => setViewport(viewport)}
