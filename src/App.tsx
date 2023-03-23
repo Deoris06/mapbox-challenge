@@ -183,8 +183,8 @@ function App() {
         <ReactMapGL
         {...viewport}
         mapboxApiAccessToken="pk.eyJ1IjoiZGVvcm9zMDYiLCJhIjoiY2xmaWU4dThuMDhkdDNvcG5xNTAzc2c1MiJ9.jVQ7dXhkq1hjIsUf6qPjBw"
-        width="100"
-        height="100"
+        width="100%"
+        height="100%"
         transitionDuration={200}
         mapStyle="mapbox://styles/mapbox/streets-v12"
         onViewportChange={(viewport: any) => setViewport(viewport)}
