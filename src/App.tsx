@@ -230,8 +230,8 @@ function App() {
                 longitude={p.long}
                 closeButton={true}
                 closeOnClick={true}
-                onClose={() => setCurrentPlaceId(null)}
-                anchor="bottom"
+                onClose={() => {setCurrentPlaceId(null); setShow(false)}}
+                anchor="top"
                 className='popup__container'
               >
                 <div className="card" style={{padding: 10, width: "300px"}}>
