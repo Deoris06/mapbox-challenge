@@ -168,7 +168,7 @@ function App() {
   };
   const getWeatherDetails = async (locationDetail : any) => {
     setLoading(true);
-    const { data } = await axios.get(`https://api.weatherbit.io/v2.0/forecast/daily?city=${locationDetail}&days=2&units=S&key=38cffdf5e59944b39dae8c63400862fe`)
+    const { data } = await axios.get(`https://api.weatherbit.io/v2.0/forecast/daily?city=${locationDetail}&days=2&units=S&key=6c8216562be042989e85791764ccf4ec`)
     const res = await data;
     setLoading(false);
     return data.data;
